@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/*:root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,14 +14,385 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}*/
+body{
+  max-width: 1920px;
+}
+main {
+  width: 1110px;
+}
+.navbar{
+  display:flex;
+  justify-content: space-between;
+}
+.logbtn{
+  display: flex;
+  padding-left: 300px;
+}
+.headerinfo{
+  display: flex;
+  padding: 0 405px;
+}
+.headerinfo p{
+  margin-right: 20px;
+}
+.headertop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0;
+  background-color: #162A41;
+  color: white;
+  width: 1920px;
+}
+.headerbtm{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 405px;
+  background-color: white;
+  color: #162a41;
+}
+/*FOOTER*/
+footer{
+  position: relative;
+}
+.footercontainer{
+  background-color: #F8F8FB;
+  padding: 0 405px;
+  height: 500px;
+  padding-top: 50px;
+}
+.footercontainertext{
+  width: 700px;
+  margin: 20px 0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.footercontainerleft{
+  display: grid;
+  background-color: white;
+  grid-template-columns: 50px 100px;
+  padding: 50px;
+  width: 444px;
+  height: 434px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  position: absolute;
+}
+
+.footericon{
+  width:60px;
+  height:60px;
+  color: white;
+  background-color: #162A41;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.footertext{
+  padding: 0 20px;
+  display: grid;
+  grid-template-rows: 105px 105px 100px ;
+}
+.icontext{
+  width: 250px;
+}
+
+.footercontainerright{
+  line-height: 40px;
+  padding-left: 550px;
+}
+.footercontainerright h2{
+  font-weight: 500;
+  font-size: 24px;
+}
+.logodms{
+  background-color: white;
+  display:flex;
+  justify-content: flex-end;
+  padding: 40px 550px 60px 0px;
+}
+
+.footercredit{
+  text-align: center;
+  background-color: #162A41;
+  padding: 30px 0;
+  color: white;
+}
+.footertextbutik{
+  width: 300px;
+}
+
+.footertext h3{
+  font-size: 12;
+  color: #7B7B7B;
+}
+
+.footertext p{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/*HOME*/
+
+.banner{
+  display: flex;
+  justify-items: center;
+}
+.bannerimg{
+  position: relative;
+}
+
+.homesearch{
+  position: absolute;
+  top: 50%;
+  left: 25%;
+}
+
+.homesearch h2{
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.homesearchbox{
+  background-color: white;
+  width: 920px;
+  height: 202px;
+  color: #162a41;
+  padding: 40px 0 0 35px;
+}
+
+.homesearchbox h3{
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.homesearchbox p{
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.homesearchbarform{
+  width: 728px;
+  height: 48px;
+  border: solid 2px #D3DEE8;
+}
+
+.homesearchbar{
+  display: flex;
+ 
+}
+.homesearchbarbtn{
+  width: 120px;
+  height: 48px;
+  background-color: #162A41;
+  color: white;
+  margin-left: 10px;
+}
+
+input{
+  width: 720px;
+  display: flex;
+  padding: 10px 0 0 10px;
+  
+}
+
+
+
+/*APP*/
+
+.homeapp{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  height: 512px;
+  padding: 0 405px;
+  background-color: #162A41;
+  color: white;
+}
+
+.homeapp h2{
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.homeapp p{
+  font-size: 18px;
+}
+
+.homeapptext{
+  padding-top: 50px;
+}
+
+.homeapptext p{
+  padding-bottom: 25px;
+  width: 650px;
+}
+
+.homeapptext h2{
+  width: 350px;
+  padding-bottom: 20px;
+}
+
+.homeappbtn{
+  display: flex;
+}
+
+.gpbtn{
+  width: 189px;
+  height: 62px;
+  background-color: white;
+  color: #162A41;
+  display: grid;
+  grid-template-columns: 25px 25px;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 20px 0 0 35px;
+}
+
+.asbtn{
+  width: 189px;
+  height: 62px;
+  border: solid 2px white;
+  border-radius: 3px;
+  display: grid;
+  grid-template-columns: 25px 25px;
+  margin-left: 15px;
+  font-size: 18px;
+  padding: 15px 0 0 35px;
+}
+
+.phonel{
+  position: absolute;
+  z-index: 1;
+  left: 55%;
+  top: 17%;
+}
+
+.phoner{
+  position: absolute;
+  left: 65%;
+  top: 17%;
+}
+
+/*CONTACT*/
+
+.contacttexttitle h1{
+  background-color: #162A41;
+  color: white;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 50px;
+  height: 192px;
+}
+.contacttext {
+  padding: 0 405px;
+}
+.contacttext h2{
+  font-size: 30px;
+  font-family: 500;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+.contacttext p{
+  font-size: 18px;
+  padding-bottom: 50px;
+}
+.contactform{
+  border: solid 2px #D3DEE8;
+  width: 635px;
+  height: 710px;
+  padding: 40px 0 0px 40px;
+  margin-bottom: 100px;
+}
+.formgroup input, .formgroup textarea{
+  border: solid 2px #D3DEE8;
+  margin: 15px 0;
+}
+.formgroup{
+  font-size: 18px;
+}
+.contactformname{
+  display: flex;
+  gap: 20px;
+
+}
+.contactformname input{
+  width: 267px;
+  height: 60px;
+  padding: 0 0 0 15px;
+  margin-top: 30px;
+}
+.contactformsubject{
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  padding: 30px 0 0 0;
+}
+.contactformsubjecttext{
+  width: 554px;
+  height: 60px;
+  padding: 15px 0 0 15px;
+}
+.contactformmessage{
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  padding: 20px 0 0 0 ;
+  width: 554px;
+  height: 214px;
+}
+.contactformmessagetext{
+  padding: 15px 0 0 15px;
+}
+.contactformcheck{
+  display: flex;
+  
+}
+.contactformcheck input{
+ 
+  width: 25px;
+  height: 25px;
+}
+.contactformcheck{
+  margin: 15px 15px 25px 0;
+  gap: 10px;
+}
+.contactform button{
+  background-color: #162A41;
+  color: white;
+  width: 168px;
+  height: 62px;
+}
+.contactformcon{
+  display: grid;
+  grid-template-columns: 700px 300px;
+}
+.contactforminfo{
+  border: solid 2px #D3DEE8;
+  padding-left: 50px;
+  width: 445px;
+  height: 710px;
+  
+}
+.contactformicon{
+  width:50px;
+  height:50px;
+  color: white;
+  background-color: #162A41;
+  border-radius: 50%;
+  padding: 8px 0 0 10px;
+  margin-left: 80px;
+  font-size: 30px;
+}
+.contactforminfocon{
+  padding: 20px 0 0 75px;
+  margin-top: 40px;
+  width: 286px;
+  height: 168px;
+}
+.contactforminfotext{
+  text-align: center;
 }
