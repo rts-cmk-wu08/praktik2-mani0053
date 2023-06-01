@@ -15,41 +15,54 @@
     --background-end-rgb: 0, 0, 0;
   }
 }*/
-body{
-  max-width: 1920px;
-}
 main {
-  width: 1110px;
+  margin: 0 auto;
 }
+.wrapper{
+  margin: 0 auto;
+  max-width: 1110px;
+}
+/*TITLES*/
+.contacttitle h1, .agenttitle h1{
+  background-color: #162A41;
+  color: white;
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/*HEADER*/
 .navbar{
-  display:flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  text-align: center;
 }
+
 .logbtn{
   display: flex;
   padding-left: 300px;
 }
 .headerinfo{
   display: flex;
-  padding: 0 405px;
 }
 .headerinfo p{
   margin-right: 20px;
 }
 .headertop {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 0;
+  display: flex;
   background-color: #162A41;
   color: white;
-  width: 1920px;
+  justify-content: space-evenly;
+  padding: 10px 0;
 }
 .headerbtm{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 405px;
+  display: flex;
+  justify-content: space-evenly;
   background-color: white;
   color: #162a41;
+  padding: 10px 0;
 }
 /*FOOTER*/
 footer{
@@ -57,15 +70,9 @@ footer{
 }
 .footercontainer{
   background-color: #F8F8FB;
-  padding: 0 405px;
   height: 500px;
-  padding-top: 50px;
+  padding: 50px 0 0 300px;
 }
-.footercontainertext{
-  width: 700px;
-  margin: 20px 0;
-}
-
 .footercontainerleft{
   display: grid;
   background-color: white;
@@ -102,15 +109,10 @@ footer{
   line-height: 40px;
   padding-left: 550px;
 }
-.footercontainerright h2{
-  font-weight: 500;
-  font-size: 24px;
-}
 .logodms{
   background-color: white;
-  display:flex;
-  justify-content: flex-end;
-  padding: 40px 550px 60px 0px;
+  height: 227px;
+  padding: 75px 0 0 850px;
 }
 
 .footercredit{
@@ -134,27 +136,15 @@ footer{
 }
 
 /*HOME*/
-
+/*HOME BANNER*/
 .banner{
-  display: flex;
-  justify-items: center;
-}
-.bannerimg{
   position: relative;
 }
-
 .homesearch{
   position: absolute;
-  top: 50%;
-  left: 25%;
-}
-
-.homesearch h2{
-  font-size: 50px;
-  font-weight: 700;
-  color: white;
-  text-align: center;
-  padding-bottom: 10px;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, 0);
 }
 .homesearchbox{
   background-color: white;
@@ -163,27 +153,13 @@ footer{
   color: #162a41;
   padding: 40px 0 0 35px;
 }
-
-.homesearchbox h3{
-  font-size: 20px;
-  font-weight: 500;
-  padding-bottom: 10px;
-}
-
-.homesearchbox p{
-  font-size: 16px;
-  padding-bottom: 10px;
-}
-
 .homesearchbarform{
   width: 728px;
   height: 48px;
   border: solid 2px #D3DEE8;
 }
-
 .homesearchbar{
   display: flex;
- 
 }
 .homesearchbarbtn{
   width: 120px;
@@ -192,55 +168,33 @@ footer{
   color: white;
   margin-left: 10px;
 }
-
 input{
   width: 720px;
   display: flex;
   padding: 10px 0 0 10px;
-  
 }
-
-
-
 /*APP*/
-
 .homeapp{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
   height: 512px;
-  padding: 0 405px;
   background-color: #162A41;
+}
+.divtest{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   color: white;
 }
-
-.homeapp h2{
-  font-weight: 700;
-  font-size: 38px;
-}
-
-.homeapp p{
-  font-size: 18px;
-}
-
 .homeapptext{
-  padding-top: 50px;
+  padding-top: 100px;
 }
-
 .homeapptext p{
   padding-bottom: 25px;
   width: 650px;
+  font-size: 18px;
 }
-
-.homeapptext h2{
-  width: 350px;
-  padding-bottom: 20px;
-}
-
 .homeappbtn{
   display: flex;
 }
-
 .gpbtn{
   width: 189px;
   height: 62px;
@@ -279,29 +233,6 @@ input{
 }
 
 /*CONTACT*/
-
-.contacttexttitle h1{
-  background-color: #162A41;
-  color: white;
-  font-weight: 700;
-  font-size: 60px;
-  text-align: center;
-  padding-top: 50px;
-  height: 192px;
-}
-.contacttext {
-  padding: 0 405px;
-}
-.contacttext h2{
-  font-size: 30px;
-  font-family: 500;
-  padding-top: 100px;
-  padding-bottom: 40px;
-}
-.contacttext p{
-  font-size: 18px;
-  padding-bottom: 50px;
-}
 .contactform{
   border: solid 2px #D3DEE8;
   width: 635px;
@@ -319,7 +250,6 @@ input{
 .contactformname{
   display: flex;
   gap: 20px;
-
 }
 .contactformname input{
   width: 267px;
@@ -349,10 +279,8 @@ input{
 }
 .contactformcheck{
   display: flex;
-  
 }
 .contactformcheck input{
- 
   width: 25px;
   height: 25px;
 }
@@ -368,7 +296,8 @@ input{
 }
 .contactformcon{
   display: grid;
-  grid-template-columns: 700px 300px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 .contactforminfo{
   border: solid 2px #D3DEE8;
@@ -395,4 +324,66 @@ input{
 }
 .contactforminfotext{
   text-align: center;
+}
+
+/* AGENT*/
+.agentscontainer{
+  display: grid;
+  grid-template-columns: repeat( 3, minmax(0, 1fr));
+  margin-bottom: 40px;
+}
+
+
+/*AGENT ID*/
+.agentinfoicon{
+  display: grid;
+  grid-template-columns: 50px, 1fr;
+}
+
+.searchpropertyform{
+  display: flex;
+  width: 290px;
+  height: 42px;
+  border: solid 2px #D3DEE8;
+  background-color: white;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.searchproperty{
+  width: 350px;
+  height: 175px;
+  background-color: #EEF7FF ;
+ 
+  margin-left: 20px;
+}
+.searchproperty h2{
+  font-size: 24px;
+  font-weight: 500;
+}
+.agent{
+  display: flex;
+  /*padding: 0 405px;*/
+  margin-top: 100px;
+}
+.agentad{
+  width: 350px;
+  height: 450px;
+  background-color: #162A41;
+  color:white;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.agentform{
+  border: 2px solid #D3DEE8;
+  width: 730px;
+  height: 1360px;
+  padding: 40px 0 0 40px;
+}
+.agentad{
+  text-align: center;
+  padding-top: 80px;
+  font-size: 30px;
 }

@@ -7,6 +7,7 @@ const Footer = () => {
     return ( 
         <>
         <footer>
+           
             <div className="footercontainer">
             <div>
             <Image
@@ -15,8 +16,8 @@ const Footer = () => {
             width={200}
             alt="logo"
             />
-            <p className="footercontainertext">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.
+            <p class="mt-5 mb-10">
+            There are many variations of passages of Lorem Ipsum available, but the majority have <br/> suffered alteration in some form, by injected humour, or randomised words.
             </p>
             </div>
             
@@ -48,7 +49,7 @@ const Footer = () => {
                     
                 </div>
                 <div className="footercontainerright">
-                    <h2>Quick Links</h2>
+                    <h2 class="font-500 text-2xl ">Quick Links</h2>
                     <p>Boliger til salg</p>
                     <p>Mæglere</p>
                     <p>Kontakt os</p>
@@ -65,6 +66,7 @@ const Footer = () => {
             alt="logo"
             />
             </div>
+           
             <div className="footercredit">
                 Layout By Jit Banik 2020
             </div>

@@ -11,8 +11,6 @@ const Header = () => {
             <div className="headertop">
                 <div className="headerinfo">
                 <SiMinutemailer/><p>4000@dinmaegler.com</p>
-
-
                 <BsFillTelephoneFill/><p>+4570704000</p>
                 </div>
                 <div className="logbtn">
@@ -38,6 +36,7 @@ const Header = () => {
                     <li><Link href="/contact">Kontakt os</Link></li>         
                 </ul>
             </nav>
+
         </header>
      );
 }

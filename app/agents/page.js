@@ -20,11 +20,11 @@ const Agents = async () => {
       
       <div>
         <h1 class="bg-main-color text-white text-6xl font-bold text-center py-12 " >Medarbejdere i Roskilde</h1>
-        <div class="grid grid-cols-3 px-[405px] ml-16 mb-28" >
+        <div class="agentscontainer wrapper" >
           
           {agents.map((agent) => (  
             <Link href={`/agents/${agent.id}`}>
-            <div class="pl-5 shadow-lg shadow-grey-500/50 w-[300px] h-[350px] mt-28" > 
+            <div class="pl-5 shadow-lg shadow-grey-500/50 w-[300px] h-72 mt-28" > 
             <Image
             class="pr-4"
             src={agent.image.url}
@@ -35,7 +35,7 @@ const Agents = async () => {
             <div class="text-center">
             <h2 key={agent.id}>{agent.name}</h2>
             <p class="text-darkgrey">{agent.title}</p>
-            <div class="flex ml-28 space-x-3">
+            <div class="flex ml-28 space-x-3 mt-8">
             <HiMail/>
             <AiFillLinkedin/>
             </div>

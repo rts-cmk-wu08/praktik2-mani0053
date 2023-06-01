@@ -27,25 +27,28 @@ const Contact = () => {
     
 
     return ( 
-        <div className="contacttexttitle">
+        <>
+        <div className="contacttitle">
             <h1>Kontakt os</h1>
-            <div className="contacttext">
-            <h2>Vi sidder klar til at besvare dine spørgsmål</h2>
-            <p>Der kan opstå tvivl om mange ting når man gerne vil, eller er i gang med at sælge sin bolig. Vores medarbejdere sider klar alle ugens dage til at svare på dine spørgsmål.</p>
+        </div>
+        <div className="wrapper">
+            <div>
+            <p class="text-3xl font-medium pt-24 pb-10">Vi sidder klar til at besvare dine spørgsmål</p>
+            <p class=" text-lg pb-12">Der kan opstå tvivl om mange ting når man gerne vil, eller er i gang med at sælge sin bolig. <br/> Vores medarbejdere sider klar alle ugens dage til at svare på dine spørgsmål.</p>
 
             <div className="contactformcon">
                 <div className="contactform">
                     <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="contactformname">
-                    <div className="formgroup">
+                        <div className="formgroup">
                         <label htmlFor="name">Navn</label>
                         <input
                         placeholder="Indtast dit navn"
                         type="text" {...register("name", {required: "Required!", maxLength: {value: 5, message: "Name is too long!"} })} />
                         <ErrorMessage errors={errors} name="name" />
+                        </div>
 
-                    </div>
-                    <div className="formgroup">
+                        <div className="formgroup">
                         <label htmlFor="email">E-mail</label>
                         <input 
                         placeholder="Indtast din email"
@@ -57,8 +60,9 @@ const Contact = () => {
                         }
                         })}/>
                         <ErrorMessage errors={errors} name="email" />
+                        </div>
                     </div>
-                    </div>
+
                     <div className="formgroup contactformsubject">
                         <label className="contactformlabel" htmlFor="message">Emne</label>
                         <textarea 
@@ -111,21 +115,23 @@ const Contact = () => {
                     </div>
                     <div className="contactforminfotext">
                     <h3>Besøg</h3>
-                    <p>Stændertorvet 78, 4000 Roskilde</p></div>
+                    <p>Stændertorvet 78, <br/> 4000 Roskilde</p></div>
                     </div>
 
                 </div>
                 
             </div>
             </div>
-            <Image
-                    className="map"
-                    src="/map.png"
-                    height={800}
-                    width={1920}
-                    alt="logo"
-                    />
+            
         </div>
+            <Image
+            className="map"
+            src="/map.png"
+            height={800}
+            width={1920}
+            alt="logo"
+            />
+        </>
      );
 }
  

@@ -17,10 +17,10 @@ const Home = () => {
         />
         </div>
         <div className="homesearch">
-          <h2>Søg efter din drømmebolig</h2>
+          <h2 class="text-5xl font-bold text-white text-center pb-2.5" >Søg efter din drømmebolig</h2>
           <div className="homesearchbox">
-            <h3>Søg blandt 158 boliger til salg i 74 butikker</h3>
-            <p>Hvad skal din næste bolig indeholde</p>
+            <h3 class="text-xl font-medium pb-2.5">Søg blandt 158 boliger til salg i 74 butikker</h3>
+            <p class="text-base pb-2.5">Hvad skal din næste bolig indeholde</p>
             <div className="homesearchbar">
             <form className="homesearchbarform">
               <input
@@ -30,7 +30,6 @@ const Home = () => {
               id="search"
               placeholder="Søg på fx. glaskeramisk komfur, bryggers, kælder eller lignende"
               />
-              
             </form>
             <button className="homesearchbarbtn" type="submit">Søg</button>
             </div>
@@ -39,23 +38,27 @@ const Home = () => {
         </div>
 
       </div>
-      <section>
-        <h2>
-          Vi har fulgt danskerne hjem i snart 4 årtier
-        </h2>
-        <p>
-          Det synes vi siger noget om os!
-        </p>
-      </section>
-      <Intro/>
+      <div className="wrapper">
+        <section>
+          <h2>
+            Vi har fulgt danskerne hjem i snart 4 årtier
+          </h2>
+          <p>
+            Det synes vi siger noget om os!
+          </p>
+        </section>
+        <Intro/>
+      </div>
 
 
 
 
 
       <div className="homeapp">
+        <div className="wrapper">
+          <div className="divtest">
         <div className="homeapptext">
-          <h2>Hold dig opdateret på salgsprocessen</h2>
+          <h2 class="font-medium text-4xl w-80 pb-5">Hold dig opdateret på salgsprocessen</h2>
           <p>Når du sælger din bolig hos Din Mægler, kommunikerer du nemt med den ansvalige mægler eller butik med vores app. Her kan du også se statistik på interessen for din bolig i alle vores salgskanaler.</p>
           <div className="homeappbtn">
             <div className="gpbtn">
@@ -67,8 +70,6 @@ const Home = () => {
             
           </div>
         </div>
-
-
         <div >
           <Image
             className="phonel"
@@ -85,11 +86,9 @@ const Home = () => {
             alt="phonel"
           />
         </div>
+        </div>
       </div>
-
-
-
-
+      </div>
     </div>
    );
 }
