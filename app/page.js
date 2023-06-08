@@ -2,7 +2,8 @@ import Image from "next/image";
 import Intro from "./components/intro";
 import { BsGooglePlay } from "react-icons/bs";
 import { BsApple } from "react-icons/bs";
-
+import News from "./components/news";
+import Workers from "./components/workers";
 const Home = () => {
   return ( 
     <div>
@@ -17,10 +18,10 @@ const Home = () => {
         />
         </div>
         <div className="homesearch">
-          <h2 class="text-5xl font-bold text-white text-center pb-2.5" >Søg efter din drømmebolig</h2>
+          <h2 className="text-5xl font-bold text-white text-center pb-2.5" >Søg efter din drømmebolig</h2>
           <div className="homesearchbox">
-            <h3 class="text-xl font-medium pb-2.5">Søg blandt 158 boliger til salg i 74 butikker</h3>
-            <p class="text-base pb-2.5">Hvad skal din næste bolig indeholde</p>
+            <h3 className="text-xl font-medium pb-2.5">Søg blandt 158 boliger til salg i 74 butikker</h3>
+            <p className="text-base pb-2.5">Hvad skal din næste bolig indeholde</p>
             <div className="homesearchbar">
             <form className="homesearchbarform">
               <input
@@ -38,17 +39,9 @@ const Home = () => {
         </div>
 
       </div>
-      <div className="wrapper">
-        <section>
-          <h2>
-            Vi har fulgt danskerne hjem i snart 4 årtier
-          </h2>
-          <p>
-            Det synes vi siger noget om os!
-          </p>
-        </section>
-        <Intro/>
-      </div>
+      <Intro/>
+      <News/>
+      <Workers/>
 
 
 
@@ -58,7 +51,7 @@ const Home = () => {
         <div className="wrapper">
           <div className="divtest">
         <div className="homeapptext">
-          <h2 class="font-medium text-4xl w-80 pb-5">Hold dig opdateret på salgsprocessen</h2>
+          <h2 className="font-medium text-4xl w-80 pb-5">Hold dig opdateret på salgsprocessen</h2>
           <p>Når du sælger din bolig hos Din Mægler, kommunikerer du nemt med den ansvalige mægler eller butik med vores app. Her kan du også se statistik på interessen for din bolig i alle vores salgskanaler.</p>
           <div className="homeappbtn">
             <div className="gpbtn">

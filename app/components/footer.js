@@ -9,6 +9,7 @@ const Footer = () => {
         <footer>
            
             <div className="footercontainer">
+            <div className="wrapper">
             <div>
             <Image
             src="/logo.png"
@@ -16,7 +17,7 @@ const Footer = () => {
             width={200}
             alt="logo"
             />
-            <p class="mt-5 mb-10">
+            <p className="mt-5 mb-10">
             There are many variations of passages of Lorem Ipsum available, but the majority have <br/> suffered alteration in some form, by injected humour, or randomised words.
             </p>
             </div>
@@ -49,7 +50,7 @@ const Footer = () => {
                     
                 </div>
                 <div className="footercontainerright">
-                    <h2 class="font-500 text-2xl ">Quick Links</h2>
+                    <h2 className="font-500 text-2xl ">Quick Links</h2>
                     <p>Boliger til salg</p>
                     <p>Mæglere</p>
                     <p>Kontakt os</p>
@@ -58,7 +59,8 @@ const Footer = () => {
 
             </div>
             </div>
-            <div className="logodms">
+            </div>
+            <div className="logodms wrapper">
             <Image
             src="/dms.png"
             height={400}

@@ -14,8 +14,8 @@ const Contact = () => {
         defaultValues: {
             name:"",
             email:"",
-            message:"",
             subject:"",
+            message:"",
         },
     });
 
@@ -28,13 +28,13 @@ const Contact = () => {
 
     return ( 
         <>
-        <div className="contacttitle">
+        <div className="title">
             <h1>Kontakt os</h1>
         </div>
         <div className="wrapper">
             <div>
-            <p class="text-3xl font-medium pt-24 pb-10">Vi sidder klar til at besvare dine spørgsmål</p>
-            <p class=" text-lg pb-12">Der kan opstå tvivl om mange ting når man gerne vil, eller er i gang med at sælge sin bolig. <br/> Vores medarbejdere sider klar alle ugens dage til at svare på dine spørgsmål.</p>
+            <p className="text-3xl font-medium pt-24 pb-10">Vi sidder klar til at besvare dine spørgsmål</p>
+            <p className=" text-lg pb-12">Der kan opstå tvivl om mange ting når man gerne vil, eller er i gang med at sælge sin bolig. <br/> Vores medarbejdere sider klar alle ugens dage til at svare på dine spørgsmål.</p>
 
             <div className="contactformcon">
                 <div className="contactform">
@@ -49,7 +49,7 @@ const Contact = () => {
                         </div>
 
                         <div className="formgroup">
-                        <label htmlFor="email">E-mail</label>
+                        <label htmlFor="email">Email</label>
                         <input 
                         placeholder="Indtast din email"
                         type="email" {...register("email", {

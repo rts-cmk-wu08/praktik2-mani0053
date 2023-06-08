@@ -23,7 +23,7 @@ main {
   max-width: 1110px;
 }
 /*TITLES*/
-.contacttitle h1, .agenttitle h1{
+.title{
   background-color: #162A41;
   color: white;
   font-weight: 700;
@@ -71,7 +71,7 @@ footer{
 .footercontainer{
   background-color: #F8F8FB;
   height: 500px;
-  padding: 50px 0 0 300px;
+  padding-top: 50px;
 }
 .footercontainerleft{
   display: grid;
@@ -112,7 +112,7 @@ footer{
 .logodms{
   background-color: white;
   height: 227px;
-  padding: 75px 0 0 850px;
+  padding: 70px 0 0 550px;
 }
 
 .footercredit{
@@ -173,6 +173,76 @@ input{
   display: flex;
   padding: 10px 0 0 10px;
 }
+/*INTRO*/
+.introcon{
+  display: flex;
+  padding: 80px 0;
+}
+.introicons{
+  display: flex;
+  padding: 50px 0;
+}
+.introicon{
+  display: flex;
+}
+.househand, .house{
+  background-color: #EEF7FF;
+  width: 70px;
+  height: 70px;
+}
+.introinfo{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 100px 0;
+}
+.infoicon{
+  background-color: #EEF7FF;
+  width: 50px;
+  height: 50px;
+}
+/*NEWS*/
+.newsdiv{
+  background-color: #162A41;
+  height: 284px;
+}
+.newscon{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
+  
+}
+.newsform{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: solid 2px #D3DEE8;
+}
+.newsform input{
+  width: 500px;
+  height: 74px;
+}
+
+.newsform button{
+  background-color: white;
+  font-size: 28px;
+}
+/*WORKERS INDEX 3*/
+.workerscon{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+margin-bottom: 100px;
+margin-left: 50px;
+}
+
+.workersbtn{
+  background-color: #162A41;
+  color:white;
+  width: 192px;
+  height: 64px;
+  margin-left: 455px;
+  margin-bottom: 70px;
+  border-radius: 2px;
+}
+
 /*APP*/
 .homeapp{
   position: relative;
@@ -218,20 +288,39 @@ input{
   font-size: 18px;
   padding: 15px 0 0 35px;
 }
-
 .phonel{
   position: absolute;
   z-index: 1;
   left: 55%;
   top: 17%;
 }
-
 .phoner{
   position: absolute;
   left: 65%;
   top: 17%;
 }
-
+/*HOUSE*/
+.housecon{
+  display: grid;
+  grid-template-columns: repeat( 2, minmax(0, 1fr));
+  gap:30px;
+  margin-bottom: 100px;
+}
+.house2ndcon{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-top: 50px;
+  border-radius: 2px;
+  width: 540px;
+  height: 550px;
+}
+.house3rdcon{
+  display: flex;
+}
+.house4thcon{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  padding-top: 10px;
+}
 /*CONTACT*/
 .contactform{
   border: solid 2px #D3DEE8;
@@ -293,6 +382,7 @@ input{
   color: white;
   width: 168px;
   height: 62px;
+  border-radius: 3px;
 }
 .contactformcon{
   display: grid;
@@ -335,11 +425,16 @@ input{
 
 
 /*AGENT ID*/
-.agentinfoicon{
-  display: grid;
-  grid-template-columns: 50px, 1fr;
+
+.agentinfo{
+  display: flex;
+  gap:12px;
 }
 
+.agentinfoicon{
+  display:grid;
+  gap:8px;
+}
 .searchpropertyform{
   display: flex;
   width: 290px;
@@ -375,15 +470,38 @@ input{
   font-size: 30px;
   font-weight: 500;
 }
-
-.agentform{
+.agentcon{
   border: 2px solid #D3DEE8;
   width: 730px;
-  height: 1360px;
+  height: 1230px;
   padding: 40px 0 0 40px;
+  margin-bottom: 100px;
+}
+.agentform{
+  margin-top: 50px;
 }
 .agentad{
   text-align: center;
   padding-top: 80px;
   font-size: 30px;
+}
+
+/*NOT FOUND*/
+.notfound{
+  text-align: center;
+  background-color: #EEF7FF;
+  padding-bottom: 70px;
+}
+.notfoundbtn{
+  background-color: #162A41;
+  color:white;
+  width: 215px;
+  height: 64px;
+  border-radius: 2px;
+}
+.notfoundtitle{
+  color: black;
+  font-weight: 700;
+  font-size: 200px;
+  /*-webkit-text-stroke-width: 2px;*/
 }
