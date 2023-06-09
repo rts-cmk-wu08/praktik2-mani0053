@@ -4,48 +4,19 @@ import { BsGooglePlay } from "react-icons/bs";
 import { BsApple } from "react-icons/bs";
 import News from "./components/news";
 import Workers from "./components/workers";
+import Banner from "./components/banner";
+import Homes from "./components/homes";
+
 const Home = () => {
+
+  
   return ( 
     <div>
-      <div className="banner">
-        <div className="bannerimg">
-      <Image
-        className="logo"
-        src="/banner.png"
-        height={1300}
-        width={1920}
-        alt="logo"
-        />
-        </div>
-        <div className="homesearch">
-          <h2 className="text-5xl font-bold text-white text-center pb-2.5" >Søg efter din drømmebolig</h2>
-          <div className="homesearchbox">
-            <h3 className="text-xl font-medium pb-2.5">Søg blandt 158 boliger til salg i 74 butikker</h3>
-            <p className="text-base pb-2.5">Hvad skal din næste bolig indeholde</p>
-            <div className="homesearchbar">
-            <form className="homesearchbarform">
-              <input
-              className="homesearchbarinput"
-              type="search"
-              name="query"
-              id="search"
-              placeholder="Søg på fx. glaskeramisk komfur, bryggers, kælder eller lignende"
-              />
-            </form>
-            <button className="homesearchbarbtn" type="submit">Søg</button>
-            </div>
-          </div>
-          
-        </div>
-
-      </div>
+      <Banner/> 
       <Intro/>
+      <Homes/>
       <News/>
       <Workers/>
-
-
-
-
 
       <div className="homeapp">
         <div className="wrapper">

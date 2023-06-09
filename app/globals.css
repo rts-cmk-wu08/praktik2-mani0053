@@ -64,6 +64,13 @@ main {
   color: #162a41;
   padding: 10px 0;
 }
+/*
+logo din mægler i homepage
+.logo{
+  width: 296px;
+  height: 49px;
+}
+*/
 /*FOOTER*/
 footer{
   position: relative;
@@ -111,8 +118,9 @@ footer{
 }
 .logodms{
   background-color: white;
-  height: 227px;
   padding: 70px 0 0 550px;
+  height: 227px;
+  width: 400px;
 }
 
 .footercredit{
@@ -172,6 +180,26 @@ input{
   width: 720px;
   display: flex;
   padding: 10px 0 0 10px;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+.resultsList{
+  width: 728px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px #ddd;
+  border-radius: 10px;
+  max-height: 150px;
+  overflow-y: scroll;
+}
+.searchresult{
+  padding: 10px 20px;
+}
+.searchresult:hover{
+  background-color: #efefef;
 }
 /*INTRO*/
 .introcon{

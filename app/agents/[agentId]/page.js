@@ -69,15 +69,6 @@ const AgentsDetail = async ({ params: { agentId } }) => {
                         <p>{agent.email}</p>                        
                         </div>
                         </div>
-
-
-                       
-                        
-
-
-
-
-
                     </div>
 
                 </div>
@@ -85,7 +76,6 @@ const AgentsDetail = async ({ params: { agentId } }) => {
                     <h2 className="py-6 text-xl">Om {agent.name}</h2>
                     <p className="text-lg">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some some, by injected humour, or randomised words which don't look even slightly believable.</p>
                     <p className="text-lg mt-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some some, by injected humour </p>
-
 
 
                     <div className="contactform agentform">

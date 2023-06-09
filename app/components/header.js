@@ -19,13 +19,15 @@ const Header = () => {
             </div>
             <nav className="headerbtm">
                 <Link href="/">
+                <div>
                 <Image
-                className="logo"
+                
                 src="/logo.png"
-                height={200}
-                width={200}
+                height={49}
+                width={296}
                 alt="logo"
                 />
+                </div>
                 </Link>
             
                 <ul className="navbar">

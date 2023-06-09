@@ -63,7 +63,7 @@ const Footer = () => {
             <div className="logodms wrapper">
             <Image
             src="/dms.png"
-            height={400}
+            height={227}
             width={400}
             alt="logo"
             />
