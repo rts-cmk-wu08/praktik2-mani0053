@@ -1,12 +1,7 @@
-## HELLO
-
-## Din mægler
-## Praktikforløb 2
-## 08/05/23 - 16/06/23
-## Manissha Haizan Ismail
-## WU08
 
 ## Opgavens navn: Din mægler
+## Praktikforløb 2
+## Dato: 08/05/23 - 16/06/23
 ## Navn: Manissha Haizan Ismail
 ## Holdnr: WU08
 ## Github repository: https://github.com/rts-cmk-wu08/praktik2-mani0053
