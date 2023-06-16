@@ -1,9 +1,9 @@
 "use client"
 import {useState} from "react";
 
-const Banner = ({setresults}) => {
+const Banner = ({setResults}) => {
     const [input, setInput] = useState("")
-
+    console.log(setResults)
     const fetchData = (value) => {
         fetch("https://dinmaegler.onrender.com/homes")
         .then((response) => response.json())
@@ -16,7 +16,7 @@ const Banner = ({setresults}) => {
                     home.type.toLowerCase().includes(value)
                 );
             });
-            setresults(results);
+            setResults(results);
         });
     }
 
@@ -36,7 +36,7 @@ const Banner = ({setresults}) => {
               placeholder="Søg på fx. glaskeramisk komfur, bryggers, kælder eller lignende"
               value={input}
               onChange={(e) => handleChange(e.target.value)}
-              setresults={setresults}
+              setResults={setResults}
               />
             </form>
             

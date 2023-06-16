@@ -45,7 +45,7 @@ const Contact = () => {
                         <input
                         placeholder="Indtast dit navn"
                         type="text" {...register("name", {required: "Required!", maxLength: {value: 5, message: "Name is too long!"} })} />
-                        <ErrorMessage errors={errors} name="name" />
+                        <ErrorMessage errors={errors} style={{color:"red"}} name="name" />
                         </div>
 
                         <div className="formgroup">
@@ -125,7 +125,7 @@ const Contact = () => {
             
         </div>
             <Image
-            className="map"
+            className="map img"
             src="/map.png"
             height={800}
             width={1920}

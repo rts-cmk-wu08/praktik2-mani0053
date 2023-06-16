@@ -1,6 +1,6 @@
 const Register = () => {
     return ( 
-        <Form>
+        <form>
             <div>
                 <label htmlFor="name">Fulde navn</label>
                 <input placeholder="Fulde navn" type="text" name="name" /> 
@@ -18,7 +18,7 @@ const Register = () => {
                 <input placeholder="Bekræft password"  type="password" name="confirmPassword"/>
             </div>
             <button type="submit"></button>
-        </Form>
+        </form>
      );
 }
  

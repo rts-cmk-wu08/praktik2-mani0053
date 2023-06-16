@@ -19,14 +19,14 @@ const Houses = async () => {
     <div>
         <h1 className="title">Boliger til salg</h1>
         <div className="wrapper">
-            <h2 className="text-xl font-medium">Søg efter dit drømmehus</h2>
+            <h2 className="text-xl font-medium mt-10 text-main-color">Søg efter dit drømmehus</h2>
         </div>
         <div className="wrapper housecon">
             {houses.map((house) => (
                 <Link href={`/houses/${house.id}`}>
                 <div className="house2ndcon">
                     <Image
-                    className=""
+                    className="img"
                     src={house.images[0].url}
                     height={300}
                     width={540}
@@ -43,7 +43,7 @@ const Houses = async () => {
                         <p>{house.energylabel}</p>
                         <p>{house.rooms} værelser</p>
                         <p>{house.livingspace}m2</p>
-                        <p>Kr.{house.cost}</p>
+                        <p className="text-main-color">Kr.{house.cost}</p>
                     </div>
                     </div>
                 </div>

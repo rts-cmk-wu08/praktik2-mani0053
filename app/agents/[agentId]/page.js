@@ -48,6 +48,7 @@ const AgentsDetail = async ({ params: { agentId } }) => {
                 <div className="flex">
                     <div>
                     <Image
+                        className="img"
                         src={agent.image.url}
                         height={280}
                         width={200}
@@ -80,7 +81,11 @@ const AgentsDetail = async ({ params: { agentId } }) => {
 
                     <div className="contactform agentform">
                     <form onSubmit={handleSubmit(onSubmit)}>
-                    <div className="contactformname">
+                        <div className="font-bold text-lg">
+                        <p >Kontakt {agent.name}</p>
+                        </div>
+                        <div className="contactformname">
+                        
                         <div className="formgroup">
                         <label htmlFor="name">Navn</label>
                         <input

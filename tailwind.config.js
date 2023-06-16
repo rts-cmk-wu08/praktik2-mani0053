@@ -16,6 +16,7 @@ module.exports = {
         'main-color': '#162A41;',
         'lightgrey' : '#D3DEE8',
         'darkgrey' : '#7B7B7B',
+        'lightwhite' : '#F8F8FB'
       },
       spacing: {
         '405px' : '25.313rem',

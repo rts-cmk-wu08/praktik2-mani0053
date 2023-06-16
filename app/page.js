@@ -36,14 +36,14 @@ const Home = () => {
         </div>
         <div >
           <Image
-            className="phonel"
+            className="phonel img"
             src="/phonel.png"
             height={425}
             width={270}
             alt="phonel"
           />
           <Image
-            className="phoner"
+            className="phoner img"
             src="/phoner.png"
             height={425}
             width={270}

@@ -12,6 +12,7 @@ const Footer = () => {
             <div className="wrapper">
             <div>
             <Image
+            className="img"
             src="/logo.png"
             height={200}
             width={200}
@@ -62,6 +63,7 @@ const Footer = () => {
             </div>
             <div className="logodms wrapper">
             <Image
+            className="img"
             src="/dms.png"
             height={227}
             width={400}

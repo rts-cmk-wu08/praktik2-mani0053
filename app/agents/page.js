@@ -26,7 +26,7 @@ const Agents = async () => {
             <Link href={`/agents/${agent.id}`}>
             <div className="pl-5 shadow-lg shadow-grey-500/50 w-[300px] h-72 mt-28" > 
             <Image
-            className="pr-4"
+            className="pr-4 img"
             src={agent.image.url}
             height={300}
             width={405}

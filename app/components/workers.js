@@ -18,7 +18,7 @@ const Workers = async () => {
     return ( 
         <div className="wrapper">
             <div className="mt-24 ">
-            <h2 className="text-center text-4xl font-bold mb-6">Mød vores engagerede medarbejdere</h2>
+            <h2 className="text-center text-4xl font-bold mb-6 text-main-color">Mød vores engagerede medarbejdere</h2>
             <p className="text-center text-lg">Din Mægler er garant for altid veluddannet assistance i dit boligsalg. <br/> Kontakt en af vores medarbejdere. </p>
             </div>
             <div className="workerscon">

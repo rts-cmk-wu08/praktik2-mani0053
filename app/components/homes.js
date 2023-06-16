@@ -16,11 +16,11 @@ const Homes = async () => {
     const homes = await getHomes();
     console.log(homes)
    return ( 
-    <div>
+    <div className="bg-lightwhite">
         
-        <div className="wrapper">
-            <h2 className="text-xl font-medium">Udvalgte Boliger</h2>
-            <p>There are many variations</p>
+        <div className="wrapper hometext">
+            <h2 className="text-xl font-medium mb-2">Udvalgte Boliger</h2>
+            <p>There are many variations of passages of Lorem Ipsum available but the this in <br/> majority have suffered alteration in some</p>
         </div>
         <div className="wrapper housecon">
             {homes.map((home, index) => {
@@ -29,9 +29,9 @@ const Homes = async () => {
                 <Link href={`/houses/${home.id}`}>
                 <div className="house2ndcon">
                     <Image
-                    className=""
+                    className="homesimg"
                     src={home.images[0].url}
-                    height={300}
+                    height={225}
                     width={540}
                     alt="house"
                     />
@@ -53,10 +53,11 @@ const Homes = async () => {
                 </Link>
                 )
             })}
+            <Link href="/houses">
+            <button className="workersbtn">Se alle boliger</button>
+            </Link>
         </div>
-        <Link href="/houses">
-        <button className="workersbtn">Se alle boliger</button>
-        </Link>
+        
 
     </div>
     );
